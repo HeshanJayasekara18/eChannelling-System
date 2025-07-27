@@ -1,0 +1,65 @@
+
+@charset "UTF-8";
+
+/* Feedback Form Styling */
+.feedback-form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.feedback-form-container h2 {
+    text-align: center;
+    color: #0056b3;
+}
+
+.feedback-form-container .form-group {
+    margin-bottom: 15px;
+}
+
+.feedback-form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.feedback-form-container .form-group input, 
+.feedback-form-container .form-group select, 
+.feedback-form-container .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback-form-container .form-group select {
+    cursor: pointer;
+}
+
+.feedback-form-container .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.feedback-form-container .btn-submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.feedback-form-container .btn-submit:hover {
+    background-color: #0056b3;
+}

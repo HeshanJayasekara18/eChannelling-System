@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    outline: none; 
+    border: none; 
+    text-transform: capitalize; 
+    transition: all .2s linear; 
+}
+
+.container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 25px; 
+    min-height: 100vh; 
+    background: linear-gradient(90deg, #91bede 60%,  #6694b5 40.1%); 
+    flex-direction: column; /* To stack form and button vertically */
+}
+
+.container form {
+    padding: 50px; 
+    width: 800px; 
+    background: #ffffff; 
+    border-radius: 20px; 
+    box-shadow: 0 5px 10px rgba(0,0,0,.1); 
+}
+
+.container form .row {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+}
+
+.container form .row .col {
+    flex: 1 1 250px; 
+}
+
+.container form .row .col .title {
+    font-size: 20px; 
+    color: #333; 
+    padding-bottom: 5px; 
+    text-transform: uppercase; 
+}
+
+.container form .row .col .inputBox {
+    margin: 15px 0; 
+}
+
+.container form .row .col .inputBox span {
+    margin-bottom: 10px; 
+    display: block; 
+}
+
+.container form .row .col .inputBox input,
+select {
+    width: 100%; 
+    border: 1px solid #414040; 
+    border-radius: 6px; 
+    padding: 15px 15px; 
+    font-size: 15px; 
+    text-transform: none; 
+}
+
+.container form .row .col .inputBox input:focus { 
+    border: 1px solid #17b978; 
+}
+
+textarea {
+    width: 100%; 
+    resize: none; 
+    border: 1px solid #414040; 
+    border-radius: 6px; 
+    padding: 10px; 
+}
+
+.submit-btn {
+    display: inline-block; 
+    margin: 15px 0; 
+    width: 100%; 
+    background: #17b978; 
+    color: #fff; 
+    padding: 10px; 
+    font-size: 17px; 
+    font-weight: 400; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background: #11814e; 
+}
